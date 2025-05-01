@@ -1,0 +1,164 @@
+/* === NAVBAR PRINCIPAL === */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  z-index: 999;
+  background: linear-gradient(to right, #f9f9f9, #f3f0ff, #f9f9f9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+html.dark nav {
+  background: linear-gradient(to right, #121214, #121214, #121214);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+nav img.logo {
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+/* Links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #232155;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+html.dark nav ul li a {
+  color: #ffffff;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #00a6fb;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Controles: Toggle y lenguaje */
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Botones de idioma */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.language-toggle button {
+  background: transparent;
+  border: none;
+  color: #00a6fb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-toggle button:hover {
+  background: rgba(0, 166, 251, 0.1);
+}
+
+.language-toggle .active-lang {
+  background: #00a6fb;
+  color: #fff;
+}
+
+/* Iconos menú */
+nav .fa-solid {
+  display: none;
+}
+
+/* === RESPONSIVE MOBILE === */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 5vw;
+  }
+
+  nav img.logo {
+    width: 130px;
+  }
+
+  .navbar-controls {
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    padding-top: 70px;
+    background: #00a6fb;
+    transition: right 0.5s ease;
+    z-index: 10;
+    gap: 20px;
+    align-items: center;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  /* Icono hamburguesa y cruz */
+  nav .fa-bars,
+  nav .fa-xmark {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #00a6fb;
+  }
+
+  nav ul .fa-xmark {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+}

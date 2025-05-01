@@ -1,0 +1,59 @@
+/* Estilos del footer */
+.footer {
+  background: #f9f9f9; /* Modo claro por defecto */
+  padding: 20px 8vw;
+  color: #232155;
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+/* 🔹 Estilos para los íconos de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+/* 🔹 Estilos individuales de cada ícono */
+.social-icons a {
+  color: #232155;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00a6fb; /* Azul claro */
+}
+
+/* 📌 RESPONSIVE */
+@media (max-width: 600px) {
+  .social-icons {
+    gap: 10px;
+  }
+  .social-icons a {
+    font-size: 18px;
+  }
+}
+
+/* 🔥 Estilos para modo dark */
+html.dark .footer {
+  background: linear-gradient(to right, #212121, #1a1a1e, #121214);
+  color: #f9f9f9;
+  border-top: 1px solid #00a6fb;
+}
+
+html.dark .footer-divider {
+  background: #00a6fb;
+}
+
+html.dark .social-icons a {
+  color: #f9f9f9;
+}
+
+html.dark .social-icons a:hover {
+  color: #00a6fb;
+}

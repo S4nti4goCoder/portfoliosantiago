@@ -1,0 +1,11 @@
+.home {
+  margin-top: 80px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #888;
+  font-style: italic;
+}

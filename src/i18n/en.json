@@ -1,0 +1,170 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello!",
+    "intro": "I'm Santiago Quintero",
+    "location": "Bogotá, Colombia",
+    "profession": "Fullstack Developer",
+    "description": "I’m passionate about Frontend and Backend development with experience in Javascript, React.js, Angular.js, MySQL, PHP, and Laravel. I specialize in building modern, fast, and scalable digital solutions with a focus on user experience and code quality.",
+    "cta": "Let's talk!",
+    "cv_view": "View Resume",
+    "cv_download": "Download CV",
+    "tech_label": "Technologies I master"
+  },
+  "about": {
+    "overlayText": "Building innovative solutions",
+    "title1": "About",
+    "title2": "Me",
+    "description": "Frontend and Backend developer with experience in multiple technologies. Passionate about building efficient and scalable web applications. Self-taught and committed to continuous learning and best development practices.",
+    "experience": {
+      "publicRepos": "Public Repositories",
+      "featuredProjects": "Featured Projects",
+      "yearsExperience": "Years of Experience in Projects"
+    },
+    "focus": {
+      "title1": "My Professional Focus",
+      "list1": [
+        "Development of full web applications (frontend and backend)",
+        "Scalable and maintainable architectures",
+        "Focus on performance and user experience",
+        "Implementation of coding best practices",
+        "Custom solutions for specific needs"
+      ],
+      "title2": "Other Areas of Focus",
+      "list2": [
+        "Integration of external APIs and third-party services",
+        "Automation of business processes",
+        "Development of internal management systems",
+        "Optimization of databases and queries",
+        "Development of custom admin dashboards"
+      ]
+    },
+    "timeline": {
+      "title": "Experience & Education",
+      "experience": {
+        "title": "Work Experience",
+        "items": [
+          {
+            "title": "POS Sales System, Bogotá (Freelance Project)",
+            "date": "NOVEMBER 2020 — Ongoing (2025)",
+            "description": "FullStack POS system with responsive design using PHP 8, MySQL, HTML, CSS, jQuery, and Bootstrap. MVC architecture for multi-branch, user roles, inventory, e-invoicing (Colombia), reports, and daily cash control. Designed for development and commercialization."
+          },
+          {
+            "title": "E-commerce Platform, Bogotá (Freelance Project)",
+            "date": "NOVEMBER 2023 — DECEMBER 2024",
+            "description": "Ecommerce platform in PHP with modular MVC architecture for managing products, users, and orders. Integrated REST API for CRUD operations and admin panel based on AdminLTE 3.2.0. Focused on scalability and clean code structure."
+          },
+          {
+            "title": "Document Management System, Bogotá (Freelance Project)",
+            "date": "MAY 2024 — AUGUST 2024",
+            "description": "Document system built with PHP (CodeIgniter 4, MySQL) using scalable MVC architecture, allowing creation, editing, organization, and advanced search of files."
+          },
+          {
+            "title": "Online Marketplace, Bogotá (Freelance Project)",
+            "date": "APRIL 2025 — ONGOING",
+            "description": "Marketplace built with PHP 8 and MySQL using RESTful architecture, payment gateways integration, user registration, chat interface, and multi-vendor system."
+          },
+          {
+            "title": "SENA Intern, Sistemas EnLinea S.A. Bogotá (Internship)",
+            "date": "JUNE 2022 — DECEMBER 2022",
+            "description": "Created Angular components and forms, explored microfrontend architecture, studied and applied User Story Mapping, and designed basic prototypes and Angular libraries."
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "items": [
+          {
+            "title": "Software Analysis and Development",
+            "date": "NOVEMBER 2020 — DECEMBER 2022",
+            "description": "SENA: Servicio Nacional de Aprendizaje (Bogotá D.C)"
+          },
+          {
+            "title": "High School Diploma, Instituto Tomas Moro, Bogotá",
+            "date": "JANUARY 2011 — DECEMBER 2016"
+          },
+          {
+            "title": "Intro to Front-end Development, Coursera",
+            "date": "NOVEMBER 15, 2024"
+          },
+          {
+            "title": "Complete Web Development with HTML5, CSS3, JS, AJAX, PHP and MySQL, Udemy",
+            "date": "APRIL 2020 — DECEMBER 2022"
+          },
+          {
+            "title": "Deep Dive into HTML and CSS, Platzi",
+            "date": "JANUARY 2022 — APRIL 2022"
+          },
+          {
+            "title": "Frontend with Angular, Platzi",
+            "date": "JULY 2022 — SEPTEMBER 2023"
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "frontend": {
+      "title": "Frontend",
+      "description": "I specialize in frontend development to build modern and functional websites using technologies like HTML, CSS, JavaScript, React, Angular, and Laravel. I always focus on delivering optimized and scalable solutions."
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "I develop backend applications using Node.js, ensuring seamless integration with databases and APIs to offer optimal performance and an exceptional user experience."
+    },
+    "webapps": {
+      "title": "Web Applications",
+      "description": "I build custom web apps with ReactJS, focusing on dynamic, fast, and responsive user experiences."
+    }
+  },
+  "portfolio": {
+    "sectionTitle": "Portfolio",
+    "ecommerce": {
+      "title": "Ecommerce",
+      "description": "Ecommerce project in PHP with modular MVC architecture to manage products, users, and orders. Includes REST API for CRUD and admin panel using AdminLTE 3.2.0. Focused on scalability and clean code."
+    },
+    "pos": {
+      "title": "Point of Sale System (POS)",
+      "description": "POS system in PHP (MVC) with multi-branch, user roles, inventory management, e-invoicing (Colombia), reports, and daily cash control. Built for development and commercialization."
+    },
+    "marketplace": {
+      "title": "Marketplace",
+      "description": "Marketplace built in PHP8/MySQL with RESTful API, payment gateways, user registration, conversational UI, and multi-vendor system."
+    },
+    "filemanager": {
+      "title": "File Manager",
+      "description": "Document management system in PHP/CodeIgniter 4/MySQL for creating, editing, organizing, and advanced file search. Scalable MVC architecture."
+    },
+    "viewGithub": "View on GitHub"
+  },
+  "contact": {
+    "title": "Contact",
+    "info_title": "CONTACT INFORMATION",
+    "form_title": "Send a Message",
+    "name_placeholder": "Full Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Message",
+    "button": "Send Message",
+    "validations": {
+      "name_required": "Name is required.",
+      "name_min": "Name must be at least 3 characters.",
+      "email_required": "Email is required.",
+      "email_invalid": "Email is not valid.",
+      "message_required": "Message is required.",
+      "message_min": "Message must be at least 10 characters.",
+      "error_submit": "There was an error submitting the form.",
+      "error_network": "Network error. Please try again later."
+    },
+    "success_message": "Your message was sent successfully!"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

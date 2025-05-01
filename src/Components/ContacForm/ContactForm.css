@@ -1,0 +1,172 @@
+.contact {
+  padding: 0vw 8vw;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00a6fb;
+  margin-bottom: 40px;
+}
+
+html.dark .contact h1 {
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Sección izquierda (Información) */
+.contact-info {
+  background: #00a6fb;
+  color: #fff;
+  padding: 40px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.info-content {
+  width: 100%;
+}
+
+.icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+/* Sección derecha (Formulario) */
+.contact-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  border: 1px solid #ccc;
+}
+
+html.dark .contact-form {
+  border: 3px solid #00a6fb;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #00a6fb;
+}
+
+html.dark h2 {
+  color: #fff;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+html.dark .contact-form input,
+html.dark .contact-form textarea {
+  background-color: #262629;
+  border: 1px solid #00a6fb;
+  color: #fff;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #00a6fb;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0, 166, 251, 0.1);
+  border: 1px solid #00a6fb;
+  border-radius: 10px;
+  color: #00a6fb;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.success-icon {
+  font-size: 1.8rem;
+}
+
+.error {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* 📌 Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .contact-form {
+    border-radius: 0 0 8px 8px;
+  }
+}

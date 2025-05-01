@@ -1,0 +1,170 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "¡Hola!",
+    "intro": "Soy Santiago Quintero",
+    "location": "Bogotá, Colombia",
+    "profession": "Desarrollador Fullstack",
+    "description": "Soy un apasionado del desarrollo Frontend y Backend con experiencia en Javascript, React.js, Angular.js, MySQL, PHP y Laravel. Me especializo en crear soluciones digitales modernas, rápidas y escalables, con enfoque en la experiencia del usuario y la calidad del código.",
+    "cta": "¡Hablemos!",
+    "cv_view": "Ver Curriculum",
+    "cv_download": "Descargar CV",
+    "tech_label": "Tecnologías que domino"
+  },
+  "about": {
+    "overlayText": "Desarrollando soluciones innovadoras",
+    "title1": "Sobre",
+    "title2": "Mí",
+    "description": "Desarrollador Frontend y Backend con experiencia en múltiples tecnologías. Apasionado por crear aplicaciones web eficientes y escalables. Autodidacta comprometido con el aprendizaje continuo y las mejores prácticas de desarrollo.",
+    "experience": {
+      "publicRepos": "Repositorios Públicos",
+      "featuredProjects": "Proyectos Destacados",
+      "yearsExperience": "Años de Experiencia en proyectos"
+    },
+    "focus": {
+      "title1": "Mi Enfoque Profesional",
+      "list1": [
+        "Desarrollo de aplicaciones web completas (frontend y backend)",
+        "Arquitecturas escalables y mantenibles",
+        "Énfasis en rendimiento y experiencia de usuario",
+        "Implementación de mejores prácticas de código",
+        "Soluciones personalizadas para necesidades específicas"
+      ],
+      "title2": "Otra área de enfoque",
+      "list2": [
+        "Integración de APIs externas y servicios de terceros",
+        "Automatización de procesos de negocio",
+        "Desarrollo de sistemas de gestión internos",
+        "Optimización de bases de datos y consultas",
+        "Desarrollo de paneles de administración personalizados"
+      ]
+    },
+    "timeline": {
+      "title": "Experiencia y Educación",
+      "experience": {
+        "title": "Experiencia Laboral",
+        "items": [
+          {
+            "title": "Sistema de Ventas POS (Punto de Venta), Bogotá (Proyecto freelance)",
+            "date": "NOVIEMBRE 2020 — En curso (2025)",
+            "description": "Desarrollo de un sistema de ventas FullStack con diseño responsive, utilizando PHP 8, MySQL, HTML, CSS, jQuery y Bootstrap. Implementación de arquitectura MVC para gestionar multi-sucursales, roles de usuario, inventario, facturación electrónica (Colombia), reportes y control de caja diaria. Proyecto diseñado para desarrollo y comercialización."
+          },
+          {
+            "title": "Sistema de comercio electrónico (Ecommerce), Bogotá (Proyecto freelance)",
+            "date": "NOVIEMBRE 2023 — DICIEMBRE 2024",
+            "description": "Desarrollo de plataforma eCommerce en PHP con arquitectura modular MVC para la gestión de productos, usuarios y pedidos. Integración de API REST para operaciones CRUD y panel administrativo basado en AdminLTE 3.2.0, con enfoque en escalabilidad y buenas prácticas de organización del código."
+          },
+          {
+            "title": "Sistema de Gestor de Documentos, Bogotá (Proyecto freelance)",
+            "date": "MAYO 2024 — AGOSTO 2024",
+            "description": "Desarrollo de sistema de gestión documental en PHP (CodeIgniter 4, MySQL) con arquitectura MVC escalable, permitiendo creación, edición, organización y búsqueda avanzada de archivos."
+          },
+          {
+            "title": "Sistema Marketplace (mercado online), Bogotá (Proyecto freelance)",
+            "date": "ABRIL 2025 — EN CURSO",
+            "description": "Desarrollo de marketplace en PHP 8 y MySQL con arquitectura RESTful, integración de pasarelas de pago, registro de usuarios, interfaz conversacional y sistema multivendedor."
+          },
+          {
+            "title": "Aprendiz SENA, Sistemas EnLinea S.A. Bogotá (Practicas)",
+            "date": " JUNIO 2022 — DICIEMBRE 2022",
+            "description": "Crear y desarrollar componentes y formularios en Angular, investigar e implementar microfrontends, estudiar e implementar la técnica de User Story Mapping, diseñar e implementar prototipos básicos sobre pantallas de soporte y en la creación de librerías Angular. "
+          }
+        ]
+      },
+      "education": {
+        "title": "Educación",
+        "items": [
+          {
+            "title": "Análisis y Desarrollo de Sistemas de información",
+            "date": "NOVIEMBRE 2020 — DICIEMBRE 2022",
+            "description": "SENA: Servicio Nacional de Aprendizaje (Bogotá D.C)"
+          },
+          {
+            "title": "Bachiller Académico, Instituto Tomas Moro, Bogotá",
+            "date": "ENERO 2011 — DICIEMBRE 2016"
+          },
+          {
+            "title": "Introducción al desarrollo de Front-end, Coursera.",
+            "date": "NOVIEMBRE 15, 2024"
+          },
+          {
+            "title": "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL, Udemy.",
+            "date": "ABRIL 2020 — DICIEMBRE 2022"
+          },
+          {
+            "title": "HTML y CSS a profundidad, Platzi.",
+            "date": "ENERO 2022 — ABRIL 2022"
+          },
+          {
+            "title": "Frontend con Angular, Platzi.",
+            "date": " JULIO 2022 — SEPTIEMBRE 2023"
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "frontend": {
+      "title": "Frontend",
+      "description": "Me especializo en desarrollo Frontend para crear sitios modernos y funcionales utilizando tecnologías como HTML, CSS, JavaScript, React, Angular y Laravel. Siempre me enfoco en ofrecer soluciones optimizadas y escalables."
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "Desarrollo de aplicaciones backend utilizando Node.js, asegurando una integración fluida con bases de datos y APIs para ofrecer un rendimiento óptimo y una experiencia de usuario excepcional."
+    },
+    "webapps": {
+      "title": "Aplicaciones Web",
+      "description": "Desarrollo aplicaciones web personalizadas con ReactJS, enfocándome en crear experiencias de usuario dinámicas, rápidas y responsivas."
+    }
+  },
+  "portfolio": {
+    "sectionTitle": "Portafolio",
+    "ecommerce": {
+      "title": "Ecommerce",
+      "description": "Proyecto de eCommerce en PHP con arquitectura modular (MVC) para gestionar productos, usuarios y pedidos. Incluye API REST para CRUD y panel de administración con AdminLTE 3.2.0. Enfoque en escalabilidad y organización del código."
+    },
+    "pos": {
+      "title": "Sistema de punto de venta (POS)",
+      "description": "Sistema POS en PHP (MVC) con multi-sucursal, roles, gestión de inventario, facturación (Colombia), reportes y caja diaria. Sistema práctico para desarrollo y comercialización."
+    },
+    "marketplace": {
+      "title": "Marketplace",
+      "description": "Marketplace en PHP8/MySQL: API RESTful, pasarelas de pago, registro de usuarios, interfaz conversiva y sistema multivendedor."
+    },
+    "filemanager": {
+      "title": "Gestor de Archivos",
+      "description": "Sistema de documentos desarrollado en PHP/CodeIgniter 4/MySQL para creación, edición, organización y búsqueda avanzada de archivos, con arquitectura MVC escalable."
+    },
+    "viewGithub": "Ver en GitHub"
+  },
+  "contact": {
+    "title": "Contacto",
+    "info_title": "INFORMACIÓN DE CONTACTO",
+    "form_title": "Envía tu Mensaje",
+    "name_placeholder": "Nombres",
+    "email_placeholder": "Correo Electrónico",
+    "message_placeholder": "Mensaje",
+    "button": "Enviar Mensaje",
+    "validations": {
+      "name_required": "El nombre es obligatorio.",
+      "name_min": "El nombre debe tener al menos 3 caracteres.",
+      "email_required": "El correo electrónico es obligatorio.",
+      "email_invalid": "El correo electrónico no es válido.",
+      "message_required": "El mensaje es obligatorio.",
+      "message_min": "El mensaje debe tener al menos 10 caracteres.",
+      "error_submit": "Hubo un error al enviar el formulario.",
+      "error_network": "Error de red. Intenta más tarde."
+    },
+    "success_message": "¡Tu mensaje fue enviado exitosamente!"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

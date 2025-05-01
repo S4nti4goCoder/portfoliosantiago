@@ -1,0 +1,36 @@
+/* === BOTÓN TOGGLE TEMA === */
+.theme-toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #00a6fb;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+}
+
+/* Hover */
+.theme-toggle-button:hover {
+  opacity: 0.9;
+}
+
+/* === RESPONSIVE para Toggle === */
+@media (max-width: 768px) {
+  .theme-toggle-button {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle-button {
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+}
