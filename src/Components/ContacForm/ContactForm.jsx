@@ -6,12 +6,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import useIsMobile from "../../hooks/useIsMobile";
 
 const ContactForm = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const [submitted, setSubmitted] = useState(false);
 
-  // Validación con Yup
   const schema = Yup.object().shape({
     name: Yup.string()
       .required(t("contact.validations.name_required"))
@@ -62,11 +63,17 @@ const ContactForm = () => {
     <motion.section
       className="contact"
       id="contact"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      {...(isMobile
+        ? {}
+        : {
+            initial: "hidden",
+            whileInView: "visible",
+            viewport: { once: false, amount: 0.3 },
+          })}
     >
-      <motion.h1>{t("contact.title")}</motion.h1>
+      <motion.h1 {...(isMobile ? {} : { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 1 } })}>
+        {t("contact.title")}
+      </motion.h1>
 
       <div className="contact-container">
         {/* Info de contacto */}
@@ -117,8 +124,8 @@ const ContactForm = () => {
 
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  whileHover={isMobile ? undefined : { scale: 1.05 }}
+                  transition={isMobile ? undefined : { type: "spring", stiffness: 300 }}
                 >
                   {t("contact.button")}
                 </motion.button>

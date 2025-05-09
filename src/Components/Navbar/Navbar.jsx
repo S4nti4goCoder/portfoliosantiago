@@ -14,9 +14,14 @@ const Navbar = () => {
   const handleScroll = (e, sectionId) => {
     e.preventDefault();
     const section = document.getElementById(sectionId);
+    const NAVBAR_HEIGHT = 70; // Ajusta si tu navbar es más alto o bajo
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "center" });
+      const yOffset = -NAVBAR_HEIGHT;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
+
     setMenuOpen(false);
   };
 

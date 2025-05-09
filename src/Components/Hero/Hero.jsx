@@ -5,9 +5,25 @@ import "./Hero.css";
 import foto from "../../assets/foto.webp";
 import { FaWhatsapp, FaFileAlt, FaDownload } from "react-icons/fa";
 
+// Hook personalizado
+const useIsMobile = (maxWidth = 768) => {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth < maxWidth : false
+  );
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < maxWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [maxWidth]);
+
+  return isMobile;
+};
+
 const Hero = () => {
   const { t, i18n } = useTranslation();
   const [currentTech, setCurrentTech] = useState(0);
+  const isMobile = useIsMobile();
 
   const technologies = [
     { name: "HTML5", icon: "fab fa-html5", color: "#E34F26" },
@@ -31,21 +47,36 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const motionProps = isMobile
+    ? {}
+    : {
+        initial: { opacity: 0, y: -50 },
+        whileInView: { opacity: 1, y: 0 },
+        transition: { duration: 1 },
+        viewport: { once: false, amount: 0.3 },
+      };
+
+  const fadeInProps = isMobile
+    ? {}
+    : {
+        initial: { opacity: 0 },
+        whileInView: { opacity: 1 },
+        transition: { duration: 1, delay: 0.3 },
+        viewport: { once: false, amount: 0.3 },
+      };
+
+  const imgFadeProps = isMobile
+    ? {}
+    : {
+        initial: { opacity: 0 },
+        whileInView: { opacity: 1 },
+        transition: { duration: 1, delay: 0.5 },
+        viewport: { once: false, amount: 0.3 },
+      };
+
   return (
-    <motion.section
-      className="hero"
-      id="hero"
-      initial={{ opacity: 0, y: -50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <motion.div
-        className="text-container"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
+    <motion.section className="hero" id="hero" {...motionProps}>
+      <motion.div className="text-container" {...fadeInProps}>
         <h1>
           <span>{t("hero.greeting")}</span> {t("hero.intro")}
         </h1>
@@ -67,7 +98,6 @@ const Hero = () => {
 
         {/* Botones */}
         <div className="hero-buttons">
-          {/* WhatsApp */}
           <a
             href="https://wa.me/573154488668"
             target="_blank"
@@ -79,7 +109,6 @@ const Hero = () => {
             {t("hero.cta")}
           </a>
 
-          {/* Botones de CV */}
           <div className="btn-split-wrapper">
             <a
               href="/cv_santiagoquintero.pdf"
@@ -111,8 +140,8 @@ const Hero = () => {
               <motion.div
                 key={tech.name}
                 className="tech-icon-item"
-                whileHover={{ scale: 1.2 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                whileHover={isMobile ? {} : { scale: 1.2 }}
+                transition={isMobile ? {} : { type: "spring", stiffness: 300 }}
               >
                 <i
                   className={`${tech.icon} ${
@@ -130,19 +159,13 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* Foto y redes */}
-      <motion.div
-        className="image-container"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
+      <motion.div className="image-container" {...imgFadeProps}>
         <motion.img
           src={foto}
           alt="Foto profesional de Santiago Quintero, desarrollador FullStack"
           loading="lazy"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.5 }}
+          whileHover={isMobile ? {} : { scale: 1.05 }}
+          transition={isMobile ? {} : { duration: 0.5 }}
         />
 
         <div className="social-links">

@@ -5,12 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import "./Portfolio.css";
+import useIsMobile from "../../hooks/useIsMobile";
 
 import ecommerce1 from "../../assets/ecommerce1.webp";
 import ecommerce2 from "../../assets/ecommerce2.webp";
@@ -37,6 +36,7 @@ import gestor8 from "../../assets/gestor8.webp";
 
 const Portfolio = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const [openLightbox, setOpenLightbox] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -100,20 +100,23 @@ const Portfolio = () => {
     setOpenLightbox(true);
   };
 
+  const getMotionProps = (initial, animate, duration = 1, delay = 0) =>
+    isMobile
+      ? {}
+      : {
+          initial,
+          whileInView: animate,
+          transition: { duration, delay },
+          viewport: { amount: 0.3 },
+        };
+
   return (
     <motion.section
       className="portfolio"
       id="portfolio"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ amount: 0.3 }}
+      {...getMotionProps({ opacity: 0 }, { opacity: 1 })}
     >
-      <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <motion.h1 {...getMotionProps({ opacity: 0, y: -40 }, { opacity: 1, y: 0 }, 0.8)}>
         {t("portfolio.sectionTitle")}
       </motion.h1>
 
@@ -122,9 +125,7 @@ const Portfolio = () => {
           <motion.div
             className="portfolio-card"
             key={item.id}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            {...getMotionProps({ opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 0.8)}
           >
             <div className="portfolio-image-container">
               <Swiper
